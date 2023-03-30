@@ -7,7 +7,22 @@
     $qtd = $res->num_rows;
 
     if ($qtd > 0) {
-
+        print "<table class='table table-hover table-striped table-bordered'>";
+        print"<tr>";
+        print "<th>#</th>";
+        print "<td>Nome</td>";
+        print "<td>E-mail</td>";
+        print "<td>Data de nascimento</td>";
+        print"</tr>";
+        while ($row = $res->fetch_object()){
+            print"<tr>";
+            print "<td>".$row->id."</td>";
+            print "<td>".$row->Nome."</td>";
+            print "<td>".$row->Email."</td>";
+            print "<td>".$row->data_nasc."</td>";
+            print"</tr>";
+        }
+        print"</table>";
     }else {
         print "<p class='alert alert-danger'>
         Não encontrou resultados!</p>";

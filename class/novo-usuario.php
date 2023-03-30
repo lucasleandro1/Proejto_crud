@@ -10,7 +10,7 @@
     <div class="mb-3">
         <label>Email</label>
         <input type="email" name="email"
-            class="form-control">1
+            class="form-control">
     </div>
     <div class="mb-3">
         <label>Senha</label>

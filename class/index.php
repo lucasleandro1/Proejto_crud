@@ -28,10 +28,10 @@
           <a class="nav-link active" aria-current="page" href="index.php">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="?page=novo">Novo usuario</a>
+          <a class="nav-link" href="?page=novo">Novo paciente</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="?page=listar">Listar usuario</a>
+          <a class="nav-link" href="?page=listar">Listar paciente</a>
         </li>
       </ul>
     </div>

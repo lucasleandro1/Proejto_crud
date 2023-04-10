@@ -1,4 +1,4 @@
-<h1>Editar usuario</h1>
+<h1>Editar paciente</h1>
 <?php
     $sql ="SELECT * FROM usuarios WHERE id=".$_REQUEST["id"];
     $res = $con->query($sql);

@@ -1,4 +1,4 @@
-<h1>Novo usuario</h1>
+<h1>Novo paciente</h1>
 
 <form action="?page=salvar" method="POST">
     <input type ="hidden" name="acao" value="cadastrar">

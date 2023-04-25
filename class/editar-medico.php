@@ -1,10 +1,10 @@
-<h1>Editar paciente</h1>
+<h1>Editar médico</h1>
 <?php
-    $sql ="SELECT * FROM usuarios WHERE id=".$_REQUEST["id"];
+    $sql ="SELECT * FROM medico WHERE id=".$_REQUEST["id"];
     $res = $con->query($sql);
     $row = $res->fetch_object();
 ?>
-<form action="?page=salvar" method="POST">
+<form action="?page=salvar-medico" method="POST">
     <input type ="hidden" name="acao" value="editar">
     <input type ="hidden" name="id" value="<?php print $row->id;?>">
     <div class="mb-3">
@@ -20,6 +20,11 @@
     <div class="mb-3">
         <label>Senha</label>
         <input type="password" name="senha" 
+            class="form-control" required>
+    </div>
+    <div class="mb-3">
+        <label>celular</label>
+        <input type="number" name="celular" 
             class="form-control" required>
     </div>
     <div class="mb-3">

@@ -1,6 +1,7 @@
-<h1>Paciente</h1>
 
-<form action="?page=salvar" method="POST">
+<h1>Médico</h1>
+
+<form action="?page=salvar-medico" method="POST">
     <input type ="hidden" name="acao" value="cadastrar">
     <div class="mb-3">
         <label>Nome</label>

@@ -28,7 +28,13 @@
           <a class="nav-link active" aria-current="page" href="index.php">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="?page=novo">Novo paciente</a>
+          <a class="nav-link" href="?page=novo">Cadastrar paciente</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="?page=novo_medico">Cadastrar medico</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="?page=listar_medico">listar medico</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="?page=listar">Listar paciente</a>
@@ -54,6 +60,15 @@
       break;
       case "editar":
         include("editar-usuario.php");
+      break;
+      case "novo_medico":
+        include("novo-medico.php");
+      break;
+      case "listar_medico":
+        include ("listar-medico.php");
+      break;
+      case"salvar_medico":
+        include("salvar-medico.php");
       break;
       default:
       print"<h1>Bem vindos</h1>";

@@ -12,7 +12,7 @@
         print "<th>#</th>";
         print "<td>Nome</td>";
         print "<td>CPF</td>";
-        print "<td>Celular</td>";
+        print "<td>Senha</td>";
         print "<td>Data de nascimento</td>";
         print"</tr>";
         while ($row = $res->fetch_object()){
